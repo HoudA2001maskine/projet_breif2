@@ -1,0 +1,303 @@
+/* Style de base pour la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav li a {
+    color: #333;
+}
+
+.navbar-nav li a:hover {
+    color: #000;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+.navbar-nav .btn {
+    margin-top: 8px;
+}
+
+.about_section {
+    padding: 60px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 40px; /* Ajouter un espace entre les sections */
+}
+
+.spcl_section {
+    padding: 60px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center; /* Centrer le texte */
+}
+
+.img-box img, .spcl_section img {
+    width: 90%;
+    height: auto;
+}
+
+.heading_container h2, .operation-title {
+    color: #2a9d8f;
+    text-align: center; /* Centrer le titre */
+}
+
+.button-voir-plus {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #004d00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-voir-plus:hover {
+    background-color: #76c7c0;
+    transform: scale(1.05);
+}
+
+.button-voir-plus:focus {
+    outline: none;
+}
+
+#slider {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden; /* Assurer que les diapositives ne débordent pas */
+}
+
+.swiper-container {
+    position: relative;
+    overflow: hidden; /* Assurer que les diapositives ne débordent pas */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slide-content img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-content h2 {
+    color: #2a9d8f;
+}
+
+.text-content p {
+    color: #333;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #4caf50; /* Couleur verte */
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #76c7c0; /* Couleur verte plus claire */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    background-color: #4caf50; /* Couleur verte */
+    color: #fff; /* Couleur des flèches en blanc */
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+    line-height: 44px;
+    color: #fff; /* Couleur des flèches en blanc */
+}
+
+.swiper-button-next:after {
+    content: '→';
+}
+
+.swiper-button-prev:after {
+    content: '←';
+}
+
+.dark-mode-toggle {
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+.navbar-nav li a.dark-mode {
+    color: #e0e0e0;
+}
+
+.navbar-nav li a.dark-mode:hover {
+    color: #ffffff;
+}
+
+.heading_container h2, .operation-title {
+    color: #4caf50;
+    text-align: center; /* Centrer le titre */
+}
+
+.footer.dark-mode {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+/* Style pour les puces à côté du texte dans la section 1 */
+.about_section ul {
+    list-style-type: none; /* Enlever les puces par défaut */
+    padding: 0;
+    margin: 0;
+}
+
+.about_section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.about_section ul li::before {
+    content: '•'; /* Symbole de puce */
+    font-size: 24px; /* Taille de la puce */
+    color: #2a9d8f; /* Couleur de la puce */
+    margin-right: 10px; /* Espacement entre la puce et le texte */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand .logo {
+        width: 40px;
+    }
+    
+    .about_section .col-md-6, .spcl_section .col-md-6 {
+        margin-bottom: 30px;
+    }
+    
+    .swiper-slide img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .slide-content {
+        flex-direction: column;
+    }
+    
+    .text-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.spcl_section .slide-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spcl_section .text-content {
+    width: 45%;
+    margin-top: 20px;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.spcl_section img {
+    width: 100%;
+    height: auto;
+}

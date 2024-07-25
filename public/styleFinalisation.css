@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-menu > li > a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-btn {
+  margin: 8px 15px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .navbar-default {
+  background-color: #444;
+  border-color: #444;
+}
+
+.dark-mode .navbar-default .navbar-brand,
+.dark-mode .navbar-default .navbar-nav > li > a,
+.dark-mode .navbar-default .navbar-nav > li > a:hover,
+.dark-mode .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #555;
+}
+
+.dark-mode .dropdown-menu > li > a {
+  color: #fff;
+}
+
+/* Styles pour le slider */
+#slider {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Hauteur réduite à 50% de la fenêtre */
+  margin-bottom: 40px; /* Espace ajouté sous le slider */
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+  border-radius: 8px; /* Coins arrondis pour le fond */
+}
+
+/* Réduction de la taille des images du slider */
+.swiper-slide img {
+  width: auto; /* Ajuste la largeur automatiquement */
+  height: 50%; /* Réduit la hauteur des images */
+  object-fit: cover; /* S'assure que l'image couvre l'espace sans déformation */
+}
+
+/* Styles pour les contrôles du swiper */
+.swiper-button-next, .swiper-button-prev {
+  color: #54e979; /* Couleur des flèches */
+}
+
+.swiper-pagination-bullet {
+  background: #05872e; /* Couleur des bullets de pagination */
+}
+
+/* Bordures vertes pour le tableau */
+.table {
+  border-collapse: collapse; /* Assure que les bordures des cellules sont fusionnées */
+  width: 100%;
+  margin-bottom: 0; /* Élimine l'espace en bas du tableau */
+}
+
+.table th, .table td {
+  border: 2px solid #004d00; /* Bordure verte pour les cellules */
+  padding: 10px;
+  text-align: left;
+}
+
+.table thead th {
+  background-color: #eaf2e3; /* Couleur de fond claire pour les en-têtes */
+  color: #004d00; /* Couleur du texte des en-têtes */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Couleur de fond alternée pour les lignes paires */
+}
+
+.table tbody tr:hover {
+  background-color: #d4edda; /* Couleur de fond pour la ligne survolée */
+}
+
+h2, h3, h4 {
+  color: #298729; /* Vert foncé */
+  text-align: center;
+}
+
+#transformation {
+  padding: 20px; /* Réduit le padding */
+  background-color: #f8f9fa;
+}
+
+#transformation h2 {
+  text-align: center;
+  color: #004d00; /* Vert foncé */
+  margin-bottom: 20px; /* Réduit l'espace sous le titre */
+}
+
+/* Styles pour Swiper */
+.swiper-container {
+  width: 100%;
+  height: 50vh; /* Hauteur réduite pour le conteneur */
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Couleur du texte dans les boîtes de transformation */
+.transformation-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 300px; /* Largeur fixe pour les boîtes */
+  height: 400px; /* Hauteur fixe pour garantir la même taille */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Pour positionner l'image en absolu */
+  overflow: hidden; /* Cache les débordements de l'image */
+}
+
+.transformation-img {
+  width: 100%;
+  height: 200px; /* Hauteur fixe pour les images */
+  object-fit: cover; /* Couvrir l'espace sans déformation */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out; /* Transition pour l'effet de survol */
+}
+
+.transformation-box:hover .transformation-img {
+  transform: scale(1.2); /* Agrandit l'image au survol */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+  /* Réduire la taille des polices pour les petits écrans */
+  .navbar-nav > li > a {
+    font-size: 14px;
+  }
+
+  .dropdown-menu > li > a {
+    font-size: 12px;
+  }
+
+  .swiper-slide img {
+    height: 40%; /* Ajuste la hauteur des images dans le slider */
+  }
+
+  #transformation {
+    padding: 20px 10px; /* Réduit le padding */
+  }
+
+  .transformation-box {
+    max-width: 100%; /* Permet aux boîtes de s'adapter à l'écran */
+    height: auto; /* Ajuste la hauteur en fonction du contenu */
+  }
+
+  .transformation-img {
+    height: 150px; /* Ajuste la hauteur des images */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav > li > a {
+    font-size: 12px;
+  }
+
+  .dropdown-menu > li > a {
+    font-size: 10px;
+  }
+
+  .swiper-slide img {
+    height: 30%; /* Ajuste la hauteur des images dans le slider */
+  }
+
+  .transformation-img {
+    height: 120px; /* Ajuste la hauteur des images */
+  }
+}

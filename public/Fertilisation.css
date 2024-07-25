@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* Fond blanc pour le corps */
+  color: #000000; /* Texte noir pour le corps */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000; /* Texte noir pour les liens */
+}
+
+.dropdown-menu > li > a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000; /* Texte noir pour les items du dropdown */
+}
+
+.navbar-btn {
+  margin: 8px 15px;
+}
+
+.dark-mode {
+  background-color: #000000; /* Fond noir pour le mode sombre */
+  color: #ffffff; /* Texte blanc pour le mode sombre */
+}
+
+.dark-mode .navbar-default {
+  background-color: #1a1a1a; /* Noir très foncé pour la navbar */
+  border-color: #1a1a1a;
+}
+
+.dark-mode .navbar-default .navbar-brand,
+.dark-mode .navbar-default .navbar-nav > li > a,
+.dark-mode .navbar-default .navbar-nav > li > a:hover,
+.dark-mode .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff; /* Texte blanc pour les liens dans le mode sombre */
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #333333; /* Fond gris foncé pour le dropdown */
+}
+
+.dark-mode .dropdown-menu > li > a {
+  color: #ffffff; /* Texte blanc pour les items du dropdown */
+}
+
+#a-propos {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.title {
+  text-transform: capitalize;
+  margin: 70px 0;
+  font-weight: bold;
+  color: #4caf50; /* Vert pour les titres */
+  position: relative;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.title::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: #4caf50; /* Vert pour la bordure après le titre */
+  width: 5px;
+}
+
+.img-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.img-desc .left {
+  position: relative;
+  margin-left: 10px;
+  height: 250px;
+  width: 40%;
+}
+
+.img-desc .right {
+  width: 57%;
+}
+
+.img-desc .left video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 0 10px #4caf50; /* Ombre verte pour la vidéo */
+}
+
+.img-desc .left::after {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  content: "";
+  height: 100%;
+  background-color: #4caf50; /* Vert pour le fond après la vidéo */
+  width: 100%;
+  z-index: -1;
+}
+
+.img-desc .right h3 {
+  color: #ffffff; /* Texte blanc pour les titres dans la section image-description */
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.img-desc .right p {
+  color: #999999; /* Gris clair pour le texte dans la section image-description */
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+.img-desc .right a {
+  border: 1px solid #4caf50; /* Bordure verte pour les liens */
+  color: #4caf50; /* Texte vert pour les liens */
+  font-size: 14px;
+  padding: 8px 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Destination CSS */
+#popular-destination {
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+#popular-destination .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between; /* Ajuste l'espacement entre les boxes */
+}
+
+#popular-destination .box {
+  overflow: hidden;
+  position: relative;
+  height: 400px; /* Hauteur des boxes */
+  width: calc(50% - 16px); /* Ajuste la largeur pour deux boxes par ligne avec espace */
+  transition: 0.5s;
+}
+
+#popular-destination .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.box .content h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.box .content p {
+  padding: 2px;
+  font-size: 14px; /* Taille de police ajustée */
+}
+
+.box .content p:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+.box .content a {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #4caf50; /* Bordure verte pour les liens */
+  color: #4caf50; /* Texte vert pour les liens */
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s; /* Animation au survol */
+}
+
+.box .content a:hover {
+  background-color: #4caf50; /* Fond vert au survol */
+  color: #ffffff; /* Texte blanc au survol */
+}
+
+.box:hover {
+  box-shadow: 0 0 20px #4caf50; /* Ombre verte au survol */
+}
+
+.box:hover .content {
+  transform: translateX(0);
+}
+

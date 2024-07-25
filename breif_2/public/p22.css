@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#etape2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 50px;
+  color: rgb(31, 218, 31);
+  margin-bottom: 40px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-menu > li > a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-btn {
+  margin: 8px 15px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .navbar-default {
+  background-color: #444;
+  border-color: #444;
+}
+
+.dark-mode .navbar-default .navbar-brand,
+.dark-mode .navbar-default .navbar-nav > li > a,
+.dark-mode .navbar-default .navbar-nav > li > a:hover,
+.dark-mode .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #555;
+}
+
+.dark-mode .dropdown-menu > li > a {
+  color: #fff;
+}
+
+/*********************************************************************************************/
+#mauvaise-herbed {
+  padding: 0 10%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#mauvaise-herbed .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+#mauvaise-herbed .box {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  width: 100%;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+#mauvaise-herbed .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.box:hover .content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.box .content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box .content p {
+  padding: 2px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.box .content p:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+.box .content a {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #03980f;
+  color: #148607;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.box .content a:hover {
+  background-color: #67df87;
+  color: #fff;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px #0de226;
+}
+
+.img2 {
+  width: 70%;
+  height: auto;
+  margin-left: 15%; /* Ajustement pour centrer l'image */
+  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+  margin-top: -30px;
+}
+
+.ligne {
+  width: 15%;
+  height: 7px;
+  background-color: green;
+  margin: 0 auto; /* Pour centrer horizontalement */
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+
+.text-container{
+  box-shadow: 12px 0 20px rgba(0, 0, 0, 0.2); /* Ombre portée horizontale pour l'image */
+}
+
+.image-container {
+  width: 530px; 
+  height: 499px; 
+  margin-left: 53%; 
+  margin-top: -44%;
+  margin-bottom: 3%;
+}
+
+.image-container img {
+  display: block; /* Pour s'assurer que l'image est bien un bloc */
+  width: 100%; /* Remplit la largeur du conteneur */
+  height: auto; /* Ajuste automatiquement la hauteur */
+  border-radius: 5px; /* Optionnel : bordure arrondie */
+}

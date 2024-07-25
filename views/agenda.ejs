@@ -1,0 +1,51 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Fertilisation des Olives</title>
+    <link rel="stylesheet" href="/styleagenda.css">
+</head>
+<body>
+    
+    <div class="agenda">
+        <h1>Agenda de Fertilisation des Olives</h1>
+        <div class="months">
+            <button class="month" data-month="janvier">Janvier</button>
+            <button class="month" data-month="fevrier">Février</button>
+            <button class="month" data-month="mars">Mars</button>
+            <button class="month" data-month="avril">Avril</button>
+            <button class="month" data-month="mai">Mai</button>
+            <button class="month" data-month="juin">Juin</button>
+            <button class="month" data-month="juillet">Juillet</button>
+            <button class="month" data-month="aout">Août</button>
+            <button class="month" data-month="septembre">Septembre</button>
+            <button class="month" data-month="octobre">Octobre</button>
+            <button class="month" data-month="novembre">Novembre</button>
+            <button class="month" data-month="decembre">Décembre</button>
+        </div>
+        <div id="details" class="details">
+            <h2>Détails du Mois</h2>
+            <img id="month-image" src="img/STADEE.png" alt="Image du Mois" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+            <p id="cycle-vegetatif"></p>
+            <p id="fertilisation"></p>
+        </div>
+    </div>
+    <div class="agenda-form">
+        <form id="add-event-form" action="/api/events" method="post">
+          <label for="month">Mois:</label>
+          <input type="text" id="mois" name="month">
+          <label for="titre">Titre:</label>
+          <input type="text" id="titre" name="title">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+          <button type="button" id="add-event">Ajouter l'événement</button>
+          <button type="button" id="delete-event">Supprimer l'événement</button>
+          <button type="button" id="update-event">Modifier l'événement</button>
+          <button type="button" id="view-event">Afficher l'événement</button>          
+        </form>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
