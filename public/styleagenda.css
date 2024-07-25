@@ -84,7 +84,7 @@ h1 {
 .agenda-form input[type="text"],
 .agenda-form input[type="date"],
 .agenda-form textarea {
-    width: calc(100% - 20px); /* Ajuste la largeur en tenant compte du padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
